@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookNow </title>
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <!--jquery  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- css Link -->
+    <link rel="stylesheet" href="./Style.css">
+    <!-- book css Link -->
+    <link rel="stylesheet" href="./book.css">
+    <!-- Icons Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!--Header -->
+    <section id="Header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand " href="./index.html">Benadir Travel</a>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Packages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./tour.html">Tour Details</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./about.html">About us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                more info
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./book.html">Book Now</a></li>
+                                <li><a class="dropdown-item" href="./register.html">Register</a></li>
+                                <li><a class="dropdown-item" href="./login.html">Login</a></li>
+                                <li><a class="dropdown-item" href="./contact.html">Contact</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <!-- booking form -->
+    <div class="booking-container">
+        <h1>Book Your Tour</h1>
+        <form id="bookingForm">
+            <input type="text" id="fullname" placeholder="Your Full Name"><br>
+            <input type="email" id="email" placeholder="Your Email"><br>
+
+            <select id="tourType">
+                <option value="">Select Tour Type</option>
+                <option value="Family Tour">Family Tour</option>
+                <option value="Adventure Tour">Adventure Tour</option>
+                <option value="Business Tour">Business Tour</option>
+            </select><br>
+
+            <input type="date" id="tourDate"><br>
+
+            <button type="submit">Book Now</button>
+        </form>
+    </div>
+
+
+
+    <script>
+        $("#bookingForm").submit(function (e) {
+            e.preventDefault();
+
+            var name = $("#fullname").val().trim();
+            var email = $("#email").val().trim();
+            var tour = $("#tourType").val();
+            var date = $("#tourDate").val();
+
+            if (name === "" || email === "" || tour === "" || date === "") {
+                alert("Fadlan buuxi dhammaan meelaha booking-ka.");
+                return;
+            } else {
+                // alert("Booking successful! Mahadsanid " + name + ".");
+                alert(`Booking successful! Mahadsanid mr ${name}.`)
+                // Optional: Clean the form
+                $("#bookingForm")[0].reset();
+               
+
+            }
+            window.location.href = "index.html";
+        });
+
+        // input foucs
+
+        const input = $("input").focus(() => {
+            input.css("outline", "none");
+
+        })
+    </script>
+</body>
+
+</html>

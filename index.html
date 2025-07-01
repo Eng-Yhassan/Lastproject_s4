@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel </title>
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <!--jquery  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- css Link -->
+    <link rel="stylesheet" href="./Style.css">
+    <!-- Icons Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!--Header -->
+    <section id="Header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand " href="./index.html">Benadir Travel</a>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Packages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./tour.html">Tour Details</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./about.html">About us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                more info
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./book.html">Book Now</a></li>
+                                <li><a class="dropdown-item" href="./register.html">Register</a></li>
+                                <li><a class="dropdown-item" href="./login.html">Login</a></li>
+                                <li><a class="dropdown-item" href="./contact.html">Contact</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <!-- Hero -->
+
+    <section id="Hero">
+        <div class="container hero-section py-5">
+            <div class="row align-items-center">
+                <!-- Left Hero -->
+                <div class="col-md-6 mb-4 mb-md-0" id="Left-Hero">
+                    <h4>Explore The</h4>
+                    <h1>Travel & Adventures</h1>
+                    <p>Find Awesome hotel, tour, car and activities in London</p>
+                    <a href="#" class="btn" id="btn">More Info</a>
+                </div>
+
+                <!-- Right Hero -->
+                <div class="col-md-6 text-center" id="Right-Hero">
+                    <img src="./images/Home-page/Hero/right_img.jpg" alt="Travel Image" class="img-fluid  ">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tour_types  section(2) -->
+
+    <div class="Tour_types">
+        <h4>Browse By Category</h4>
+        <h1>Pick A Tour Type</h1>
+
+
+        <div class="tour_cards">
+            <!-- Card1 -->
+            <div class="tour_c1">
+                <i class="fa-solid fa-city"></i>
+                <h3>City Tours</h3>
+                <p>10 Tours +</p>
+            </div>
+
+            <!-- Card2 -->
+            <div class="tour_c1">
+                <i class="fa-solid fa-umbrella-beach"></i>
+                <h3>Beaches</h3>
+                <p>10 Tours +</p>
+            </div>
+            <!-- Card3 -->
+            <div class="tour_c1">
+                <i class="fa-solid fa-sailboat"></i>
+                <h3>Boat Tours</h3>
+                <p>10 Tours +</p>
+            </div>
+
+            <!-- Card4 -->
+            <div class="tour_c1">
+                <i class="fa-solid fa-bolt"></i>
+                <h3>Adventure</h3>
+                <p>10 Tours +</p>
+            </div>
+
+            <!-- Card5 -->
+            <div class="tour_c1">
+                <i class="fa-solid fa-utensils"></i>
+                <h3>Food</h3>
+                <p>10 Tours +</p>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- Fetured_tours section(3) -->
+    <div class="Fetured_tours">
+        <h4>Tours</h4>
+        <h1>Featured Tours</h1>
+
+
+        <div class="Fetured_cards">
+            <!-- card1 -->
+            <div class="Fetured_card1">
+                <img src="./images/Home-page/feutured_cards/card1.jpg" alt="budapest hungary">
+                <p>Budapest Hungary</p>
+                <h2>Wonders of the west Coast & Kimberley</h2>
+
+                <div class="mainReview">
+
+                    <div class="reviews">
+                        <p><i class="fa-solid fa-star"></i>4.8</p>
+                        <h5>15 Reviews</h5>
+                    </div>
+                    <div class="clock">
+
+                        <h6><i class="fa-regular fa-clock"></i>7 Days</h6>
+                    </div>
+
+                </div>
+                <div class="price">
+                    <p>Strating Form</p>
+                    <p>$520</p>
+                </div>
+            </div>
+
+            <!-- card2 -->
+            <div class="Fetured_card1">
+                <img src="./images/Home-page/feutured_cards/card2.jpg" alt="london uk">
+                <p>Greater, London , Uk</p>
+                <h2>Windsor Castle, and Bath From London</h2>
+
+                <div class="mainReview">
+
+                    <div class="reviews">
+                        <p><i class="fa-solid fa-star"></i>4.8</p>
+                        <h5>15 Reviews</h5>
+                    </div>
+                    <div class="clock">
+
+                        <h6><i class="fa-regular fa-clock"></i>7 Days</h6>
+                    </div>
+
+                </div>
+                <div class="price">
+                    <p>Strating Form</p>
+                    <p>$350</p>
+                </div>
+            </div>
+            <!-- card3 -->
+            <div class="Fetured_card1">
+                <img src="./images/Home-page/feutured_cards/card3.jpg" alt="australia">
+                <p>Australia</p>
+                <h2>Enchanting Great Barrier, Wonderland</h2>
+
+                <div class="mainReview">
+
+                    <div class="reviews">
+                        <p><i class="fa-solid fa-star"></i>4.8</p>
+                        <h5>15 Reviews</h5>
+                    </div>
+                    <div class="clock">
+
+                        <h6><i class="fa-regular fa-clock"></i>7 Days</h6>
+                    </div>
+
+                </div>
+                <div class="price">
+                    <p>Strating Form</p>
+                    <p>$450</p>
+                </div>
+            </div>
+            <!-- card4 -->
+            <div class="Fetured_card1">
+                <img src="./images/Home-page/feutured_cards/card4" alt="Oman">
+                <p>Oman</p>
+                <h2>Enchanting Great Barrier, Wonderland</h2>
+
+                <div class="mainReview">
+
+                    <div class="reviews">
+                        <p><i class="fa-solid fa-star"></i>4.8</p>
+                        <h5>15 Reviews</h5>
+                    </div>
+                    <div class="clock">
+
+                        <h6><i class="fa-regular fa-clock"></i>7 Days</h6>
+                    </div>
+
+                </div>
+                <div class="price">
+                    <p>Strating Form</p>
+                    <p>$599</p>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <!-- Gallery section (3) -->
+    <div class="tour-gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-flex">
+            <img src="./images/Home-page/section3/image1.jpg" alt="Mogadishu Beach">
+            <img src="./images/Home-page/section3/image2.jpg" alt="Historic Mogadishu ruins">
+            <img src="./images/Home-page/section3/image3.avif" alt="Uruba Hotel ruins">
+            <img src="./images/Home-page/section3/image4" alt="Laas Geel rock paintings">
+            <img src="./images/Home-page/section3/image5.jpg" alt="Kismayo National Park">
+            <img src="./images/Home-page/section3/image6.jpg" alt="Berbera beach">
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+
+    <div class="Main_Footer" id="contact">
+        <!-- left_Footer -->
+        <div class="left_Footer">
+            <a href="./index.html">
+                <h1>Benadir Travel</h1>
+            </a>
+            <h3>Call Us <span>(252)61476****</span></h3>
+            <p>Moagdishu, Hodan , Somalia</p>
+            <h5>BenadirTravel@gmail.com</h5>
+
+            <div class="leftIcons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+        </div>
+
+        <!-- Center Footer -->
+
+        <div class="CenterFooter">
+            <h2>Pages</h2>
+            <a href="./index.html">
+                <p>Home</p>
+            </a>
+            <a href="#">
+                <p>Packages</p>
+            </a>
+            <a href="./tour.html">
+                <p>Tour Details</p>
+            </a>
+            <a href="#">
+                <p>About</p>
+            </a>
+        </div>
+
+        <!-- RighFooter -->
+
+        <div class="RighFooter">
+            <form  id="Footer_Form"></form>
+                <h1>Subscribe</h1> <br>
+                <input type="email" placeholder="Enter Your Email..." id="Footer_input"> <br>
+                <button type="submit" id="footer_submit">submit</button>
+            </form>
+            <p>&copy;2025 All Right Reserved</p>
+        </div>
+    </div>
+
+
+
+    <!-- J-query -->
+    <script>
+        // Hero Button (More Info Button)
+        $("#btn").click(function () {
+            alert("Hadaa rabto war bixin dheeri ah tag page-ka Tour Detials")
+        })
+
+        // Footer_input footer focus ka
+
+       const Footer_input= $("#Footer_input").focus(function(){
+            Footer_input.css("outline" ,"none");
+            Footer_input.css("border-left" ,"2px solid yellow");
+            Footer_input.css("border-right" ,"2px solid yellow");
+        });
+
+    
+
+    </script>
+
+
+
+</body>
+
+</html>

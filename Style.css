@@ -1,0 +1,379 @@
+/* All Page */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* Body */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Kan Wuxuu kaa cawinaa inaa variables aa keedsato kadib aa gadaal uga wacato sida colors ama fontfamilies */
+:root {
+    /* Colors */
+    --main-color: #fc6167;
+    --secondry-color--: #16377e;
+    --third-color: black;
+    --forth-color: white;
+    --fifth-color: yellow;
+}
+
+/* Home Page */
+
+/* Header */
+#Header .navbar .collapse ul li a {
+    color: var(--third-color);
+    transition: all 0.4s ease-in;
+}
+
+/* Pages Hover */
+#Header .navbar .collapse ul li a:hover {
+    color: var(--main-color);
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+#Header .navbar .collapse ul {
+    margin-left: auto;
+    margin-right: 50px;
+    font-size: 20px;
+    color: var(--forth-color);
+}
+
+#Header .container-fluid {
+    margin-top: -8px;
+    padding: 20px 50px;
+    background-color: var(--forth-color);
+}
+
+.container-fluid .navbar-brand {
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--main-color);
+}
+
+/* Hero */
+#Hero {
+    background-color: var(--secondry-color--);
+    color: var(--forth-color);
+    padding: 30px 40px;
+}
+
+#Hero #Left-Hero h4 {
+    color: var(--fifth-color);
+}
+
+#Hero #Left-Hero h1 {
+    font-size: 90px;
+}
+
+#Hero #Left-Hero a {
+    background-color: var(--main-color);
+    color: var(--forth-color);
+    transition: all 0.5s ease-in;
+
+}
+
+#Hero #Left-Hero a:hover {
+    background-color: transparent;
+    border: 2px solid;
+    border-color: var(--main-color);
+}
+
+#Hero #Right-Hero img {
+    width: 500px;
+    border-radius: 10px;
+    transform: scale(0.9);
+    transition: all 0.5s ease-in;
+}
+
+#Hero #Right-Hero img:hover {
+    transform: scale(1);
+}
+
+
+/* Tour_types */
+
+.Tour_types {
+    padding: 90px 10px;
+    background-color: var(--bacckground-color);
+}
+
+.Tour_types h4 {
+    color: var(--main-color);
+    font-family: var(--font-style);
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.Tour_types h1 {
+    color: var(--third-color);
+    font-size: 30px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+
+/* tour_cards */
+.tour_cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+.tour_c1 {
+    background-color: var(--forth-color);
+    width: 190px;
+    height: 180px;
+    box-shadow: 1px 1px 9px rgb(0, 0, 0, 0.3);
+    padding: 10px 20px;
+    text-align: center;
+    margin-top: 50px;
+
+}
+
+.tour_c1 i {
+    background-color: var(--fifth-color);
+    padding: 16px;
+    margin-bottom: 14px;
+    border-radius: 50%;
+    font-size: 30px;
+}
+
+
+
+
+/* Gallery section */
+
+.tour-gallery {
+    padding: 50px 20px;
+    background-color: var(--bacckground-color);
+    text-align: center;
+}
+
+.tour-gallery h2 {
+    font-size: 32px;
+    color: var(--secondry-color);
+    margin-bottom: 40px;
+}
+
+.gallery-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.gallery-flex img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Fetured_tours==== */
+
+.Fetured_tours {
+    padding: 30px 1px;
+    color: var(--forth-color);
+    background-color: var(--secondry-color--);
+
+}
+
+.Fetured_tours h4 {
+    text-align: center;
+    font-size: 29px;
+    color: var(--fifth-color);
+}
+
+.Fetured_tours h1 {
+    text-align: center;
+}
+
+.Fetured_cards {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+
+/* Fetured_card1 */
+
+.Fetured_card1 {
+    width: 250px;
+    height: 330px;
+    margin-top: 30px;
+    background-color: var(--forth-color);
+    color: var(--third-color);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.Fetured_card1 img {
+    width: 250px;
+    height: 130px;
+}
+
+.Fetured_card1 p {
+    font-weight: lighter;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 4px;
+
+}
+
+.Fetured_card1 h2 {
+    margin-left: 4px;
+    font-size: 23px;
+}
+
+.Fetured_card1 .mainReview {
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 10px;
+
+}
+
+.Fetured_card1 .mainReview .clock {
+    font-size: 20px;
+    font-weight: lighter;
+    margin-right: 10px;
+}
+
+.Fetured_card1 .reviews {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: lighter;
+
+}
+
+.Fetured_card1 .reviews p {
+    background-color: var(--fifth-color);
+    padding: 3px;
+    border-radius: 2px;
+}
+
+.Fetured_card1 .price {
+    display: flex;
+    justify-content: space-around;
+    font-weight: lighter;
+
+}
+
+
+/* foooooter===== */
+
+.Main_Footer {
+    background-color: var(--third-color);
+    color: var(--forth-color);
+    padding: 90px 20px;
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+}
+
+.left_Footer {
+    border-right: 1px solid;
+    border-color: var(--forth-color);
+    padding-right: 50px;
+}
+
+.left_Footer h1 {
+    color: var(--main-color);
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.left_Footer span {
+    color: var(--fifth-color);
+}
+
+.left_Footer h3 {
+    margin-bottom: 20px;
+}
+
+.left_Footer p {
+    margin-bottom: 10px;
+}
+
+.left_Footer .leftIcons i {
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+/* centerFooter */
+.CenterFooter {
+    border-right: 1px solid;
+    border-color: var(--bacckground-color);
+    padding-right: 150px;
+}
+
+.CenterFooter p {
+    color: var(--forth-color);
+    margin-top: 20px;
+}
+
+
+
+/* RighFooter */
+.RighFooter input {
+    border: none;
+    padding: 10px 20px;
+    margin-bottom: 12px;
+    margin-top: 22px;
+    border-radius: 4px;
+    border-bottom: 2px solid;
+    border-color: var(--fifth-color);
+    background-color: transparent;
+    transition: all 0.1s ease;
+    color: var(--fifth-color);
+}
+
+
+
+
+.RighFooter button {
+    border: none;
+    background-color: var(--fifth-color);
+    color: var(--main-color);
+    padding: 7px 20px;
+    border-radius: 4px;
+    margin-bottom: 12px;
+}
+
+.RighFooter p {
+    margin-top: 12px;
+}
+
+
+
+
+
+
+
+
+
+

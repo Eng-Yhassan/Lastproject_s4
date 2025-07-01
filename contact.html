@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel </title>
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <!--jquery  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- css Link -->
+    <link rel="stylesheet" href="./Style.css">
+    <!-- contact Link -->
+    <link rel="stylesheet" href="./Contact.css">
+    <!-- Icons Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!--Header -->
+    <section id="Header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand " href="./index.html">Benadir Travel</a>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Packages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./tour.html">Tour Details</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./about.html">About us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                more info
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./book.html">Book Now</a></li>
+                                <li><a class="dropdown-item" href="./register.html">Register</a></li>
+                                <li><a class="dropdown-item" href="./login.html">Login</a></li>
+                                <li><a class="dropdown-item" href="./contact.html">Contact</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <!-- Contact form -->
+    <div class="contact-container">
+        <h1>Contact Us</h1>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name">
+            <input type="email" id="email" placeholder="Your Email">
+            <input type="text" id="subject" placeholder="Subject  (optional)">
+            <textarea id="message" placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+
+
+
+    <!-- Footer -->
+
+    <div class="Main_Footer" id="contact">
+        <!-- left_Footer -->
+        <div class="left_Footer">
+            <a href="./index.html">
+                <h1>Benadir Travel</h1>
+            </a>
+            <h3>Call Us <span>(252)61476****</span></h3>
+            <p>Moagdishu, Hodan , Somalia</p>
+            <h5>BenadirTravel@gmail.com</h5>
+
+            <div class="leftIcons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+        </div>
+
+        <!-- Center Footer -->
+
+        <div class="CenterFooter">
+            <h2>Pages</h2>
+            <a href="./index.html">
+                <p>Home</p>
+            </a>
+            <a href="#">
+                <p>Packages</p>
+            </a>
+            <a href="./tour.html">
+                <p>Tour Details</p>
+            </a>
+            <a href="./about.html">
+                <p>About</p>
+            </a>
+        </div>
+
+        <!-- RighFooter -->
+
+        <div class="RighFooter">
+            <form id="Footer_Form"></form>
+            <h1>Subscribe</h1> <br>
+            <input type="email" placeholder="Enter Your Email..." id="Footer_input"> <br>
+            <button type="submit" id="footer_submit">submit</button>
+            </form>
+            <p>&copy;2025 All Right Reserved</p>
+        </div>
+    </div>
+
+
+
+
+    <!-- Jquery -->
+
+    <script>
+        // Focus event
+        $("#contactForm input, #contactForm textarea").focus(function () {
+            $(this).css("border-color", "#28a745");
+        });
+
+        // Blur event
+        $("#contactForm input, #contactForm textarea").blur(function () {
+            if ($(this).val().trim() === "") {
+                $(this).css("border-color", "red");
+            } else {
+                $(this).css("border-color", "#ccc");
+            }
+        });
+
+        // Submit handler (optional)
+        $("#contactForm").submit(function (e) {
+            e.preventDefault();
+            alert("Thanks for contacting us!");
+            this.reset();
+        });
+    </script>
+</body>
+
+</html>

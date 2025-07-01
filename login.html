@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login </title>
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <!--jquery  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- css Link -->
+    <link rel="stylesheet" href="./Style.css">
+    <!-- Login css Link -->
+    <link rel="stylesheet" href="./login.css">
+    <!-- Icons Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- Register Form -->
+    <form id="registerForm">
+        <h2>Login</h2>
+        <input type="email" id="email" placeholder="Enter Email"><br>
+        <input type="text" id="username" placeholder="Enter Username"><br>
+        <input type="password" id="password" placeholder="Enter Password"><br>
+        <button type="submit">Login</button>
+    </form>
+    <a href="./register.html"><button>Register</button></a>
+
+
+
+    <!-- jqeury -->
+    <script>
+        // checking register formation
+        $(document).ready(function () {
+            $("#registerForm").submit(function (e) {
+                e.preventDefault(); // jooji reload
+
+                var email = $("#email").val().trim();
+                var username = $("#username").val().trim();
+                var password = $("#password").val().trim();
+
+                // Haddii midkood madhan yahay
+                if (email === "" || username === "" || password === "") {
+                    alert("Fadlan buuxi dhammaan meelaha.");
+                    return;
+                }
+
+                // Haddii uu buuxo dhammaan
+                alert("Welcome " + username + "!");
+
+                //Markuu from ka si sax ah uu ugaliyo waxaa si toos ah loo geynaa home page ka
+                window.location.href = "index.html";
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>
