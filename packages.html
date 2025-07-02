@@ -76,7 +76,7 @@
                     <div class="card-body">
                         <h5 class="card-title">5 Days in Istanbul</h5>
                         <p class="card-text">$499 – Hotel + Tour Guide</p>
-                        <a href="#" class="btn btn-primary w-100 book-one">View Details</a>
+                        <a href="#" class="btn ">View Details</a>
                     </div>
                 </div>
             </div>
@@ -87,7 +87,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Umrah Package – Makkah</h5>
                         <p class="card-text">$799 – 7 Days with Hotel</p>
-                        <a href="#" class="btn btn-primary w-100 book-two">View Details</a>
+                        <a href="#" class="btn">View Details</a>
                     </div>
                 </div>
             </div>
@@ -98,7 +98,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Dubai Luxury Tour</h5>
                         <p class="card-text">$999 – Full Package</p>
-                        <a href="#" class="btn btn-primary w-100 book-three">View Details</a>
+                        <a href="#" class="btn ">View Details</a>
                     </div>
                 </div>
             </div>
@@ -112,27 +112,30 @@
             <div class="row g-4">
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Dubai">
+                        <img src="https://www.pettitts.co.uk/img/containers/assets/destinations/5-africa-middle-east/1-morocco/main-pages/guides/a-guide-to-the-best-cities-in-morocco/chefchaouen-1.webp/11bd0ae002d8f8e7a3ba1205a64393c8/chefchaouen-1.webp"
+                            class="card-img-top" alt="Morocco">
                         <div class="card-body">
-                            <h5 class="card-title">Dubai, UAE</h5>
+                            <h5 class="card-title">Morocco, City</h5>
                             <p class="card-text">Luxury city experience, shopping, and desert safari.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Turkey">
+                        <img src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcRIw9_s7L6agvYj_23FbIzv6sGkGIieXQNKwxbYcWi4E-1NgY_NOezJuq-uLQkOdWpNVRsN4wBnx1hWUoUDVuViXlKWeK6tE9w1Wl03Kg"
+                            class="card-img-top" alt="Bali">
                         <div class="card-body">
-                            <h5 class="card-title">Istanbul, Turkey</h5>
+                            <h5 class="card-title">Bali, Indonesia</h5>
                             <p class="card-text">Explore history, mosques, and cultural vibes.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Makkah">
+                        <img src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrpfnvonnTTMY6h2xP15Ctj28PeiBr2rjzcXp3qei35tA1bSf1Lth_RW2QVeZ3Ow6Y7-Xf7Sl5mX8_rxQ0FS8eVKJKK4a0Wt-ay2Q3RajlJVdjjxY_wvxFqfPE3rHNIEqb3ILGD=w675-h390-n-k-no"
+                            class="card-img-top" alt="Mogadishu">
                         <div class="card-body">
-                            <h5 class="card-title">Makkah, Saudi Arabia</h5>
+                            <h5 class="card-title">Mogadishu, Somalia</h5>
                             <p class="card-text">Religious pilgrimage and peaceful spiritual time.</p>
                         </div>
                     </div>
@@ -171,8 +174,60 @@
             </div>
         </div>
     </section>
-    
-    
+
+
+
+    <!-- Footer -->
+
+    <div class="Main_Footer" id="contact">
+        <!-- left_Footer -->
+        <div class="left_Footer">
+            <a href="./index.html">
+                <h1>Benadir Travel</h1>
+            </a>
+            <h3>Call Us <span>(252)61476****</span></h3>
+            <p>Moagdishu, Hodan , Somalia</p>
+            <h5>BenadirTravel@gmail.com</h5>
+
+            <div class="leftIcons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+        </div>
+
+        <!-- Center Footer -->
+
+        <div class="CenterFooter">
+            <h2>Pages</h2>
+            <a href="./index.html">
+                <p>Home</p>
+            </a>
+            <a href="./packages.html">
+                <p>Packages</p>
+            </a>
+            <a href="./tour.html">
+                <p>Tour Details</p>
+            </a>
+            <a href="./about.html">
+                <p>About</p>
+            </a>
+        </div>
+
+        <!-- RighFooter -->
+
+        <div class="RighFooter">
+            <form id="Footer_Form"></form>
+            <h1>Subscribe</h1> <br>
+            <input type="email" placeholder="Enter Your Email..." id="Footer_input"> <br>
+            <button type="submit" id="footer_submit">submit</button>
+            </form>
+            <p>&copy;2025 All Right Reserved</p>
+        </div>
+    </div>
+
+
+
     <!-- Jquery -->
     <script>
         $(".book-one").click(() => {
@@ -185,6 +240,22 @@
             alert("one person is 400$ \nCouples is 8,000$ \nFamily is 35,000 $")
         });
 
+
+
+        // Footer_input footer focus ka
+
+        const Footer_input = $("#Footer_input").focus(function () {
+            Footer_input.css("outline", "none");
+            Footer_input.css("border-left", "2px solid yellow");
+            Footer_input.css("border-right", "2px solid yellow");
+        });
+
+        // Footer_input footer blur ka
+        const footer_input = $("#Footer_input").blur(function () {
+            footer_input.css("outline", "none");
+            footer_input.css("border-left", "none");
+            footer_input.css("border-right", "none");
+        });
 
 
     </script>

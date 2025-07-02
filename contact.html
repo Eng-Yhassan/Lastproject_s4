@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel </title>
+    <title>Contact </title>
     <!--bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
@@ -67,10 +67,10 @@
     <div class="contact-container">
         <h1>Contact Us</h1>
         <form id="contactForm">
-            <input type="text" id="name" placeholder="Your Name">
-            <input type="email" id="email" placeholder="Your Email">
-            <input type="text" id="subject" placeholder="Subject  (optional)">
-            <textarea id="message" placeholder="Your Message"></textarea>
+            <input type="text" id="name" placeholder="Your Name" class="input">
+            <input type="email" id="email" placeholder="Your Email" class="input">
+            <input type="text" id="subject" placeholder="Subject  (optional)" class="input">
+            <textarea id="message" placeholder="Your Message" class="input"></textarea>
             <button type="submit">Send Message</button>
         </form>
     </div>
@@ -135,15 +135,15 @@
     <script>
         // Focus event
         $("#contactForm input, #contactForm textarea").focus(function () {
-            $(this).css("border-color", "#28a745");
+            $(this).css("border-color", "yellow");
         });
 
         // Blur event
         $("#contactForm input, #contactForm textarea").blur(function () {
             if ($(this).val().trim() === "") {
-                $(this).css("border-color", "red");
+                $(this).css("border-color", "yellow");
             } else {
-                $(this).css("border-color", "#ccc");
+                $(this).css("border-color", "yellow");
             }
         });
 
@@ -152,6 +152,26 @@
             e.preventDefault();
             alert("Thanks for contacting us!");
             this.reset();
+            window.location.href = "./index.html"
+
+        });
+
+
+
+
+        // Footer_input footer focus ka
+
+        const Footer_input = $("#Footer_input").focus(function () {
+            Footer_input.css("outline", "none");
+            Footer_input.css("border-left", "2px solid yellow");
+            Footer_input.css("border-right", "2px solid yellow");
+        });
+
+        // Footer_input footer blur ka
+        const footer_input = $("#Footer_input").blur(function () {
+            footer_input.css("outline", "none");
+            footer_input.css("border-left", "none");
+            footer_input.css("border-right", "none");
         });
     </script>
 </body>

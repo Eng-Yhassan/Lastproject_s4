@@ -46,8 +46,8 @@
                             <a class="nav-link" href="./about.html">About us</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
                                 more info
                             </a>
                             <ul class="dropdown-menu">
@@ -116,7 +116,7 @@
     </div>
 
 
-    
+
 
     <!--how-it-works section(2) -->
     <div class="how-it-works">
@@ -216,7 +216,7 @@
             <a href="./index.html">
                 <p>Home</p>
             </a>
-            <a href="#">
+            <a href="./packages.html">
                 <p>Packages</p>
             </a>
             <a href="./tour.html">
@@ -244,7 +244,6 @@
 
     <!-- J-query -->
     <script>
-
         // Footer_input footer focus ka
 
         const Footer_input = $("#Footer_input").focus(function () {
@@ -253,12 +252,19 @@
             Footer_input.css("border-right", "2px solid yellow");
         });
 
+        // Footer_input footer blur ka
+        const footer_input = $("#Footer_input").blur(function () {
+            footer_input.css("outline", "none");
+            footer_input.css("border-left", "none");
+            footer_input.css("border-right", "none");
+        });
+
         // tour types see more button
 
         $("#Types_see_more").click(function () {
             alert("To see more contact us")
         });
-    
+
         // Booknow card 1
         $(".Book1").click(function () {
             alert("To book this go to BookNow Page")

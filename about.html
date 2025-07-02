@@ -245,7 +245,7 @@
             <a href="./index.html">
                 <p>Home</p>
             </a>
-            <a href="#">
+            <a href="./packages.html">
                 <p>Packages</p>
             </a>
             <a href="./tour.html">
@@ -285,8 +285,15 @@
             Footer_input.css("border-right", "2px solid yellow");
         });
 
+        // Footer_input footer blur ka
+        const footer_input = $("#Footer_input").blur(function () {
+            footer_input.css("outline", "none");
+            footer_input.css("border-left", "none");
+            footer_input.css("border-right", "none");
+        });
+
         // FindNow to find more 
-        $("#FindNow").click(function(){
+        $("#FindNow").click(function () {
             alert("To find more contact us we are in Benadir university")
         });
 

@@ -75,7 +75,7 @@ button:hover {
     color: var(--main-color);
 }
 
-input:focus,
+.input:focus,
 textarea:focus {
     border-color: #007bff;
     outline: none;
