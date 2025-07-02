@@ -35,7 +35,7 @@
                             <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Packages</a>
+                            <a class="nav-link" href="./packages.html">Packages</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./tour.html">Tour Details</a>
@@ -312,6 +312,13 @@
             Footer_input.css("outline" ,"none");
             Footer_input.css("border-left" ,"2px solid yellow");
             Footer_input.css("border-right" ,"2px solid yellow");
+        });
+
+        // Footer_input footer blur ka
+         const footer_input= $("#Footer_input").blur(function(){
+            footer_input.css("outline" ,"none");
+            footer_input.css("border-left" ,"none");
+            footer_input.css("border-right" ,"none");
         });
 
     

@@ -37,7 +37,7 @@
                             <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Packages</a>
+                            <a class="nav-link" href="./packages.html">Packages</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./tour.html">Tour Details</a>
@@ -67,17 +67,17 @@
     <div class="booking-container">
         <h1>Book Your Tour</h1>
         <form id="bookingForm">
-            <input type="text" id="fullname" placeholder="Your Full Name"><br>
-            <input type="email" id="email" placeholder="Your Email"><br>
+            <input type="text" id="fullname" placeholder="Your Full Name" class="in-1"><br>
+            <input type="email" id="email" placeholder="Your Email" class="in-2" ><br>
 
-            <select id="tourType">
+            <select id="tourType" class="in-3">
                 <option value="">Select Tour Type</option>
                 <option value="Family Tour">Family Tour</option>
                 <option value="Adventure Tour">Adventure Tour</option>
                 <option value="Business Tour">Business Tour</option>
             </select><br>
 
-            <input type="date" id="tourDate"><br>
+            <input type="date" id="tourDate" class="in-4"><br>
 
             <button type="submit">Book Now</button>
         </form>
@@ -108,12 +108,62 @@
             window.location.href = "index.html";
         });
 
-        // input foucs
+        // input 1 foucs
 
-        const input = $("input").focus(() => {
-            input.css("outline", "none");
-
+        const input1_f = $(".in-1").focus(() => {
+            input1_f.css("outline", "none");
+            input1_f.css("border-bottom", "3px solid black");
         })
+
+        // input 1 blur
+
+        const input1_B = $(".in-1").blur(() => {
+            input1_B.css("outline", "none");
+            input1_B.css("border-bottom", "1px solid black");
+        })
+        // input 2 foucs
+
+        const input2_f = $(".in-2").focus(() => {
+            input2_f.css("outline", "none");
+            input2_f.css("border-bottom", "3px solid black");
+        })
+
+        // input 2 blur
+
+        const input2_B = $(".in-2").blur(() => {
+            input2_B.css("outline", "none");
+            input2_B.css("border-bottom", "1px solid black");
+        })
+        // input 3 foucs
+
+        const input3_f = $(".in-3").focus(() => {
+            input3_f.css("outline", "none");
+            input3_f.css("border-bottom", "3px solid black");
+        })
+
+        // input 3 blur
+
+        const input3_B = $(".in-3").blur(() => {
+            input3_B.css("outline", "none");
+            input3_B.css("border-bottom", "1px solid black");
+        })
+
+         // input 4 foucs
+
+        const input4_f = $(".in-4").focus(() => {
+            input4_f.css("outline", "none");
+            input4_f.css("border-bottom", "3px solid black");
+        })
+
+        // input 4 blur
+
+        const input4_B = $(".in-4").blur(() => {
+            input4_B.css("outline", "none");
+            input4_B.css("border-bottom", "1px solid black");
+        })
+
+
+
     </script>
 </body>
 

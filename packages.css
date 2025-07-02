@@ -1,0 +1,48 @@
+/* All Page */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* Body */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Kan Wuxuu kaa cawinaa inaa variables aa keedsato kadib aa gadaal uga wacato sida colors ama fontfamilies */
+:root {
+    /* Colors */
+    --main-color: #fc6167;
+    --secondry-color--: #16377e;
+    --third-color: black;
+    --forth-color: white;
+    --fifth-color: yellow;
+}
+
+
+.card img{
+    height: 300px;
+}
+
+
+
+/* section 1 */
+
+.container h2,i{
+    color: var(--main-color);
+}
+
+/* card section1 */
+
+.card-body h5{
+    color: var(--secondry-color--);
+}
