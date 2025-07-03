@@ -283,15 +283,27 @@
             <a href="./about.html">
                 <p>About</p>
             </a>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    more info
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="./book.html">Book Now</a></li>
+                    <li><a class="dropdown-item" href="./register.html">Register</a></li>
+                    <li><a class="dropdown-item" href="./login.html">Login</a></li>
+                    <li><a class="dropdown-item" href="./contact.html">Contact</a></li>
+                </ul>
+            </li>
         </div>
 
         <!-- RighFooter -->
 
         <div class="RighFooter">
-            <form  id="Footer_Form"></form>
-                <h1>Subscribe</h1> <br>
-                <input type="email" placeholder="Enter Your Email..." id="Footer_input"> <br>
-                <button type="submit" id="footer_submit">submit</button>
+            <form id="Footer_Form"></form>
+            <h1>Subscribe</h1> <br>
+            <input type="email" placeholder="Enter Your Email..." id="Footer_input"> <br>
+            <button type="submit" id="footer_submit">submit</button>
             </form>
             <p>&copy;2025 All Right Reserved</p>
         </div>
@@ -308,20 +320,20 @@
 
         // Footer_input footer focus ka
 
-       const Footer_input= $("#Footer_input").focus(function(){
-            Footer_input.css("outline" ,"none");
-            Footer_input.css("border-left" ,"2px solid yellow");
-            Footer_input.css("border-right" ,"2px solid yellow");
+        const Footer_input = $("#Footer_input").focus(function () {
+            Footer_input.css("outline", "none");
+            Footer_input.css("border-left", "2px solid yellow");
+            Footer_input.css("border-right", "2px solid yellow");
         });
 
         // Footer_input footer blur ka
-         const footer_input= $("#Footer_input").blur(function(){
-            footer_input.css("outline" ,"none");
-            footer_input.css("border-left" ,"none");
-            footer_input.css("border-right" ,"none");
+        const footer_input = $("#Footer_input").blur(function () {
+            footer_input.css("outline", "none");
+            footer_input.css("border-left", "none");
+            footer_input.css("border-right", "none");
         });
 
-    
+
 
     </script>
 
