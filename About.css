@@ -198,3 +198,151 @@ body {
     border-radius: 12px;
 
 }
+
+
+
+
+/* ===== Responsive: About Features, Updates, and About Benadir Travel ===== */
+
+/* Tablets (max-width: 992px) */
+@media (max-width: 992px) {
+
+    .AboutFeature__cards,
+    .upadate_cards {
+        gap: 40px;
+        padding: 10px 30px;
+    }
+
+    .featucard1 {
+        width: 260px;
+        height: auto;
+    }
+
+    .featucard1 p {
+        width: 100%;
+    }
+
+    .update-card1 {
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .update-card1 img {
+        width: 100%;
+        height: auto;
+    }
+
+    .update-card1 .main_info {
+        margin-left: 0;
+    }
+
+    .About_benadir_Travel {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        padding: 20px;
+    }
+
+    .about_left h1 {
+        font-size: 36px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .about_left p {
+        width: 100%;
+        text-align: center;
+    }
+
+    .about_left button {
+        display: block;
+        margin: 20px auto 0;
+    }
+
+    .About_right img {
+        width: 90%;
+        height: auto;
+    }
+}
+
+/* Mobiles (max-width: 768px) */
+@media (max-width: 768px) {
+
+    .about_Features h6,
+    .updatess h6 {
+        font-size: 24px;
+    }
+
+    .about_Features h1,
+    .updatess h1 {
+        font-size: 22px;
+    }
+
+    .AboutFeature__cards,
+    .upadate_cards {
+        padding: 10px;
+        gap: 30px;
+    }
+
+    .featucard1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .update-card1 {
+        padding: 10px;
+    }
+
+    .About_right img {
+        width: 100%;
+    }
+
+    .about_left h4 {
+        text-align: center;
+    }
+
+    .about_left h1 {
+        font-size: 28px;
+    }
+
+    .about_left p {
+        font-size: 14px;
+    }
+}
+
+/* Small phones (max-width: 480px) */
+@media (max-width: 480px) {
+    .featucard1 i {
+        font-size: 36px;
+    }
+
+    .featucard1 h3 {
+        font-size: 18px;
+    }
+
+    .featucard1 p {
+        font-size: 13px;
+    }
+
+    .update-card1 h3 {
+        font-size: 13px;
+    }
+
+    .about_left h4 {
+        font-size: 22px;
+    }
+
+    .about_left h1 {
+        font-size: 24px;
+    }
+
+    .about_left p {
+        font-size: 13px;
+    }
+
+    .about_left button {
+        padding: 8px 14px;
+    }
+}

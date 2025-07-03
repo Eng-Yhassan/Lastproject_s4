@@ -216,3 +216,154 @@ body {
     font-size: 16px;
     color: #555;
 }
+
+
+/* ===== Responsive Design for Tour Types, How It Works, and Why Travel With Us ===== */
+
+/* Tablets (max-width: 992px) */
+@media (max-width: 992px) {
+
+    .tour-types .tourtypes_cards,
+    .steps-flex,
+    .why-flex {
+        flex-direction: row;
+        justify-content: center;
+        gap: 30px;
+        padding: 0;
+    }
+
+    .why-flex {
+        width: 90%;
+        gap: 20px;
+    }
+
+    .why-box {
+        width: 45%;
+    }
+
+    .tour-types .tour-card1,
+    .step-box {
+        width: 45%;
+    }
+
+    #Types_see_more {
+        margin-left: 35%;
+    }
+}
+
+/* Mobiles (max-width: 768px) */
+@media (max-width: 768px) {
+
+    .tour-types h1,
+    .how-it-works h2,
+    .why-travel-with-us h2 {
+        font-size: 26px;
+    }
+
+
+
+    .why-travel-with-us h2 {
+        font-size: 26px;
+    }
+
+    .why-flex {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .why-box {
+        width: 90%;
+    }
+
+    .why-box i {
+        font-size: 32px;
+    }
+
+    .why-box h3 {
+        font-size: 18px;
+    }
+
+    .why-box p {
+        font-size: 14px;
+    }
+
+    .tour-types .tourtypes_cards,
+    .steps-flex {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 10px;
+    }
+
+    .tour-types .tour-card1,
+    .step-box {
+        width: 90%;
+    }
+
+    .tour-types button {
+        margin-left: 0;
+        display: block;
+        margin: 10px auto;
+    }
+
+    #Types_see_more {
+        margin-left: 0;
+        display: block;
+        margin: 30px auto;
+    }
+}
+
+/* Small Phones (max-width: 480px) */
+@media (max-width: 480px) {
+
+    .tour-types h1,
+    .how-it-works h2,
+    .why-travel-with-us h2 {
+        font-size: 22px;
+    }
+
+    .tour-types .tour-card1 img {
+        width: 100%;
+        height: auto;
+    }
+
+
+    .why-travel-with-us h2 {
+        font-size: 22px;
+    }
+
+    .why-box {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .why-box i {
+        font-size: 28px;
+    }
+
+    .why-box h3 {
+        font-size: 16px;
+    }
+
+    .why-box p {
+        font-size: 13px;
+    }
+
+    .tour-types .tour-card1,
+    .step-box {
+        width: 100%;
+    }
+
+    .step-box i {
+        font-size: 30px;
+    }
+
+    .step-box h3 {
+        font-size: 18px;
+    }
+
+    .step-box p {
+        font-size: 14px;
+    }
+}

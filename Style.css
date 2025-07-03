@@ -417,6 +417,11 @@ body {
         height: auto;
     }
 
+    .Fetured_card1 img {
+        width: 100%;
+        height: auto;
+    }
+
     .Main_Footer {
         gap: 50px;
         padding: 50px 20px;
@@ -463,6 +468,11 @@ body {
     }
 
     .tour-gallery .gallery-flex img {
+        width: 100%;
+        height: auto;
+    }
+
+    .Fetured_card1 img {
         width: 100%;
         height: auto;
     }
